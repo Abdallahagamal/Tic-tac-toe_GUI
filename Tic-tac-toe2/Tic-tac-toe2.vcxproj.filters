@@ -36,6 +36,9 @@
     <ClInclude Include="wordX_O.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="4x4X_O2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyForm.cpp">

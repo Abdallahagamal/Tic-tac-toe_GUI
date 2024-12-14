@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4X4X_O.h" />
+    <ClInclude Include="4x4X_O2.h" />
     <ClInclude Include="5X5X_O.h" />
     <ClInclude Include="9x9X_O.h" />
     <ClInclude Include="MisereX_O.h" />

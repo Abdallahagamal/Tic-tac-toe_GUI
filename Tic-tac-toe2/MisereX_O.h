@@ -15,6 +15,14 @@ public:
 };
 
 
+template <typename T>
+class X_O_Random_Player6 : public RandomPlayer<T> {
+public:
+    X_O_Random_Player6(T symbol);
+    void getmove(int& x, int& y);
+};
+
+
 
 
 
@@ -109,6 +117,18 @@ bool X_O_Board6<T>::game_is_over() {
 //--------------------------------------
 
 // Constructor for X_O_Random_Player
+template <typename T>
+X_O_Random_Player6<T>::X_O_Random_Player6(T symbol) : RandomPlayer<T>(symbol) {
+    this->dimension = 3;
+    this->name = "Random Computer Player";
+    srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
+}
+
+template <typename T>
+void X_O_Random_Player6<T>::getmove(int& x, int& y) {
+    x = rand() % this->dimension;  // Random number between 0 and 2
+    y = rand() % this->dimension;
+}
 
 
 

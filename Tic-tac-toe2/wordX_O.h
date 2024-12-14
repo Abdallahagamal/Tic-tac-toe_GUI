@@ -29,7 +29,9 @@ class X_O_Random_Player4 : public RandomPlayer<T> {
 public:
     X_O_Random_Player4(T symbol);
     void getmove(int& x, int& y);
-
+	std::string get_symbol() { 
+        return std::string(1, this->symbol); 
+    }
 };
 
 

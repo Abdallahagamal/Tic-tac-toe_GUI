@@ -10,7 +10,7 @@
 #include <thread>
 #include <chrono>
 #include <sstream>
-
+#include "4x4X_O2.h"
 std::string labelName77;
 int gamenum=4;
 int countj = 0;
@@ -65,6 +65,7 @@ X_O_Random_Player1<char> player1('X');
 //game6
 X_O_Board6<char> boardgm6;
 std::map<int, std::pair<int, int>> labelIndexMap6;
+X_O_Random_Player6<char> player6('X');
 
 //game3
 X_O_Board3<char> boardgm3;
@@ -72,13 +73,15 @@ std::map<int, std::pair<int, int>> labelIndexMap3;
 
 //game2
 std::map<int, std::pair<int, int>> labelIndexMap2;
-
+X_O_Board2<char> boardgm2;
 //game5
 std::map<int, std::pair<int, int>> labelIndexMap5;
 
 //game4
 X_O_Board4<char> boardgm4;
 std::map<int, std::pair<int, int>> labelIndexMap4;
+X_O_Random_Player4<char> player4('X');
+
 
 ////////////////
 void check() {
