@@ -22,6 +22,10 @@ public:
     bool is_win();
     bool is_draw();
     bool game_is_over();
+    Board<T>* get_board() {
+        return this;
+    }
+
     void reset_board() {
         for (int i = 0; i < this->rows; i++) {
             for (int j = 0; j < this->columns; j++) {

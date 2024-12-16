@@ -31,7 +31,7 @@ public:
     int selectedNumber;
     int numberIndex;
     void del_vec(int numberIndex) {
-        numbers.erase(numbers.begin() + numberIndex);
+        numbers[numberIndex]=0;
     }
 	void reset_vec() {
 		this->numbers = { 1,2,3,4,5,6,7,8,9 };
@@ -139,7 +139,7 @@ void X_O_Random_Player5<T>::getmove(int& x, int& y) {
     selectedNumber = numbers[numberIndex];
     if (valid) {
         while (true) {
-            if (selectedNumber % 2 != 0) {
+            if (selectedNumber % 2 != 0 && selectedNumber!=0) {
                 break;
             }
             else
@@ -151,7 +151,7 @@ void X_O_Random_Player5<T>::getmove(int& x, int& y) {
     }
     else {
         while (true) {
-            if (selectedNumber % 2 == 0) {
+            if (selectedNumber % 2 == 0 && selectedNumber != 0) {
                 break;
             }
             else

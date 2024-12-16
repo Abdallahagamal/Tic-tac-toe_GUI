@@ -180,22 +180,26 @@ public:
                 this->board[i][j] = '0';
             }
         }
+        for (int i = 0; i < vec_av2.size(); ++i) {
+            for (int j = 0; j < vec_av2[i].size(); ++j) {
+                vec_av2[i][j] = false;
+            }
+        }
+        for (int i = 0; i < vec_av.size(); ++i) {
+            for (int j = 0; j < vec_av[i].size(); ++j) {
+                vec_av[i][j] = true;
+            }
+        }
+        d = true;
         this->n_moves = 0;
     }
 };
 
-template <typename T>
-class X_O_Player : public Player<T> {
-public:
-    X_O_Player(string name, T symbol);
-    void getmove(int& x, int& y);
-
-};
 
 template <typename T>
-class X_O_Random_Player : public RandomPlayer<T> {
+class X_O_Random_Player8 : public RandomPlayer<T> {
 public:
-    X_O_Random_Player(T symbol);
+    X_O_Random_Player8(T symbol);
     void getmove(int& x, int& y);
 };
 
@@ -231,31 +235,31 @@ d(true) {
 
 template <typename T>
 bool X_O_Board<T>::update_board(int x, int y, T mark) {
-    
-    if (!d) {
-        if (checkk(x, y)) {
-            if (cc1 > 0) {
-                ch2(x, y);
+    if (this->board[x][y] == '0') {
+        if (!d) {
+            if (checkk(x, y)) {
+                if (cc1 > 0) {
+                    ch2(x, y);
+                }
+                this->board[x][y] = mark;
+                settt(x, y);
+                this->n_moves++;
+                return true;
             }
+            else
+                return false;
+        }
+        else
+        {
             this->board[x][y] = mark;
             settt(x, y);
+            d = false;
+            cc1++;
             this->n_moves++;
             return true;
         }
-        else
-            return false;
-    }
-    else
-    {
-        this->board[x][y] = mark;
-        settt(x, y);
-        d = false;
-        cc1++;
-        this->n_moves++;
-        return true;
-    }
 
-
+    }
 
 }
 
@@ -283,12 +287,14 @@ void X_O_Board<T>::win() {
                     this->board[i + k][j + 1] == this->board[i + k][j + 2] &&
                     this->board[i + k][j] != '0') {
                     this->vec[i / 3][j / 3] = this->board[i + k][j];
+					vec_av[i / 3][j / 3] = false;
                 }
                 // Check columns in the 3x3 grid
                 if (this->board[i][j + k] == this->board[i + 1][j + k] &&
                     this->board[i + 1][j + k] == this->board[i + 2][j + k] &&
                     this->board[i][j + k] != '0') {
                     this->vec[i / 3][j / 3] = this->board[i][j + k];
+					vec_av[i / 3][j / 3] = false;
                 }
             }
             // Check diagonals within the 3x3 grid
@@ -296,11 +302,14 @@ void X_O_Board<T>::win() {
                 this->board[i + 1][j + 1] == this->board[i + 2][j + 2] &&
                 this->board[i][j] != '0') {
                 this->vec[i / 3][j / 3] = this->board[i][j];
+				vec_av[i / 3][j / 3] = false;
+
             }
             if (this->board[i][j + 2] == this->board[i + 1][j + 1] &&
                 this->board[i + 1][j + 1] == this->board[i + 2][j] &&
                 this->board[i][j + 2] != '0') {
                 this->vec[i / 3][j / 3] = this->board[i][j + 2];
+				vec_av[i / 3][j / 3] = false;
             }
         }
     }
@@ -383,30 +392,21 @@ std::string X_O_Board<T>::sboard(int x, int y) {
 
 //--------------------------------------
 
-// Constructor for X_O_Player
-template <typename T>
-X_O_Player<T>::X_O_Player(string name, T symbol) : Player<T>(name, symbol) {}
 
-template <typename T>
-void X_O_Player<T>::getmove(int& x, int& y) {
-    std::cout << "\nPlease enter your move x and y (0 to 2) separated by spaces: ";
-    std::cin >> x >> y;
-}
 
 // Constructor for X_O_Random_Player
 template <typename T>
-X_O_Random_Player<T>::X_O_Random_Player(T symbol) : RandomPlayer<T>(symbol) {
-    this->dimension = 3;
+X_O_Random_Player8<T>::X_O_Random_Player8(T symbol) : RandomPlayer<T>(symbol) {
+    this->dimension = 9;
     this->name = "Random Computer Player";
     srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
 }
 
 template <typename T>
-void X_O_Random_Player<T>::getmove(int& x, int& y) {
+void X_O_Random_Player8<T>::getmove(int& x, int& y) {
     x = rand() % this->dimension;  // Random number between 0 and 2
     y = rand() % this->dimension;
 }
-
 
 
 

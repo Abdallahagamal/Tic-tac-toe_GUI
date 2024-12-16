@@ -126,7 +126,7 @@ std::pair<int, int> X_O_MinMax_Player6<T>::getBestMove() {
                 int moveValue = calculateMinMax(this->symbol, false);
                 this->boardPtr->update_board(i, j, '0'); // Undo move
 
-                if (moveValue > bestValue) {
+                if (moveValue >= bestValue) {
                     bestMove = { i, j };
                     bestValue = moveValue;
                 }

@@ -54,6 +54,8 @@ char mm,mm2;
 //game8
 X_O_Board<char> boardgm8;
 std::map<int, std::pair<int, int>> labelIndexMap;
+X_O_Random_Player8<char> player8('X');
+
 
 //game7
 X_O_Board7<char> boardgm7;
@@ -61,6 +63,8 @@ std::map<int, std::pair<int, int>> labelIndexMap7;
 std::map<std::pair<int, int>, int> labelIndexMap7inverse;
 std::map<int, std::pair<int, int>> picturebox7_X;
 std::map<int, std::pair<int, int>> picturebox7_O;
+X_O_Random_Player7<char> player7('X');
+
 //game1
 std::map<int, std::pair<int, int>> labelIndexMap1;
 X_O_Board1<char> boardgm1;
@@ -76,6 +80,7 @@ X_O_MinMax_Player6<char> playerAI6('X');
 X_O_Board3<char> boardgm3;
 std::map<int, std::pair<int, int>> labelIndexMap3;
 X_O_Random_Player3<char> player3('X');
+
 
 //game2
 std::map<int, std::pair<int, int>> labelIndexMap2;

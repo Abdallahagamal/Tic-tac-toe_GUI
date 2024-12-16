@@ -3,7 +3,7 @@
 
 #include "BoardGame_Classes.h"
 
-
+int currentXc = 0, currentYc = 0;
 template <typename T>
 class X_O_Board7 : public Board<T> {
 private:
@@ -13,7 +13,7 @@ private:
     bool win_right_diagonal(int i, int j);
 	bool win_left_diagonal(int i, int j);
 public:
-    int currentX = 0, currentY = 0;
+    int currentX = currentXc, currentY = currentYc;
     X_O_Board7();
     bool update_board(int x, int y, T symbol);
     void display_board();
@@ -27,11 +27,25 @@ public:
                 this->board[i][j] = '0';
             }
         }
+        this->board[0][0] = 'O';
+        this->board[0][1] = 'X';
+        this->board[0][2] = 'O';
+        this->board[0][3] = 'X';
+        this->board[3][0] = 'X';
+        this->board[3][1] = 'O';
+        this->board[3][2] = 'X';
+        this->board[3][3] = 'O';
         this->n_moves = 0;
     }
 
 };
 
+template <typename T>
+class X_O_Random_Player7 : public RandomPlayer<T> {
+public:
+    X_O_Random_Player7(T symbol);
+    void getmove(int& x, int& y);
+};
 
 //--------------------------------------- IMPLEMENTATION
 
@@ -171,6 +185,7 @@ bool X_O_Board7<T>::update_board(int x, int y, T mark) {
     if (x >= 0 && x < this->rows && y >= 0 && y < this->columns && (this->board[x][y] == '0' /*to check if the index is empty*/) && ((abs(x - currentX) + abs(y - currentY)) == 1)) {
         this->board[currentX][currentY] = '0';//to remove mark from the old index
         this->board[x][y] = toupper(mark);  //to put the new mark on the new index
+        
         return true;
     }
     else return false;
@@ -237,7 +252,35 @@ bool X_O_Board7<T>::game_is_over() {
 
 
 
+template <typename T>
+X_O_Random_Player7<T>::X_O_Random_Player7(T symbol) : RandomPlayer<T>(symbol) {
+    this->dimension = 4;
+    this->name = "Random Computer Player";
+    srand(static_cast<unsigned int>(time(0)));
 
+}
+
+template <typename T>
+void X_O_Random_Player7<T>::getmove(int& x, int& y) {
+    int directionOf_x [4] = {0,0,-1,1};
+    int directionOf_y[4] = {-1,1,0,0};
+    int rndmnumber;
+    while (true)
+    {
+        rndmnumber = rand() % 4;
+        int newx = x + directionOf_x[rndmnumber];
+        int newy = y + directionOf_y[rndmnumber];
+        if (newx >= 0 && newx < this->dimension && newy >= 0 && newy < this->dimension)
+        {
+            y = newy;
+            x = newx;
+            break;
+        }
+    }
+
+
+
+}
 
 
 
