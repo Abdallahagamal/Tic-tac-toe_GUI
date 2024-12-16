@@ -344,7 +344,7 @@ private: System::Windows::Forms::TextBox^ textBox7;
 private: System::Windows::Forms::TextBox^ textBox9;
 private: System::Windows::Forms::TextBox^ textBox6;
 private: System::Windows::Forms::Panel^ panel15;
-private: System::Windows::Forms::Panel^ panel16;
+
 private: System::Windows::Forms::Button^ button23;
 private: System::Windows::Forms::Button^ button24;
 private: System::Windows::Forms::Panel^ panel17;
@@ -404,7 +404,7 @@ private: System::Windows::Forms::Label^ label190;
 
 private: System::Windows::Forms::Label^ label189;
 private: System::Windows::Forms::Panel^ panel18;
-private: System::Windows::Forms::Panel^ panel19;
+
 private: System::Windows::Forms::Label^ label219;
 
 private: System::Windows::Forms::Label^ label218;
@@ -919,8 +919,6 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->button21 = (gcnew System::Windows::Forms::Button());
 			this->button22 = (gcnew System::Windows::Forms::Button());
-			this->panel14 = (gcnew System::Windows::Forms::Panel());
-			this->label162 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox79 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox80 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox81 = (gcnew System::Windows::Forms::PictureBox());
@@ -928,8 +926,9 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->label163 = (gcnew System::Windows::Forms::Label());
 			this->label164 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox83 = (gcnew System::Windows::Forms::PictureBox());
+			this->panel14 = (gcnew System::Windows::Forms::Panel());
+			this->label162 = (gcnew System::Windows::Forms::Label());
 			this->panel15 = (gcnew System::Windows::Forms::Panel());
-			this->panel16 = (gcnew System::Windows::Forms::Panel());
 			this->label193 = (gcnew System::Windows::Forms::Label());
 			this->label192 = (gcnew System::Windows::Forms::Label());
 			this->label188 = (gcnew System::Windows::Forms::Label());
@@ -967,7 +966,6 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->label167 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox88 = (gcnew System::Windows::Forms::PictureBox());
 			this->panel18 = (gcnew System::Windows::Forms::Panel());
-			this->panel19 = (gcnew System::Windows::Forms::Panel());
 			this->label240 = (gcnew System::Windows::Forms::Label());
 			this->label219 = (gcnew System::Windows::Forms::Label());
 			this->label239 = (gcnew System::Windows::Forms::Label());
@@ -1012,8 +1010,6 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->label200 = (gcnew System::Windows::Forms::Label());
 			this->button14 = (gcnew System::Windows::Forms::Button());
 			this->button25 = (gcnew System::Windows::Forms::Button());
-			this->panel20 = (gcnew System::Windows::Forms::Panel());
-			this->label156 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox89 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox90 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox91 = (gcnew System::Windows::Forms::PictureBox());
@@ -1021,6 +1017,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->label157 = (gcnew System::Windows::Forms::Label());
 			this->label155 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox93 = (gcnew System::Windows::Forms::PictureBox());
+			this->panel20 = (gcnew System::Windows::Forms::Panel());
+			this->label156 = (gcnew System::Windows::Forms::Label());
 			this->panel21 = (gcnew System::Windows::Forms::Panel());
 			this->label250 = (gcnew System::Windows::Forms::Label());
 			this->label247 = (gcnew System::Windows::Forms::Label());
@@ -1154,14 +1152,13 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->panel10->SuspendLayout();
 			this->panel11->SuspendLayout();
 			this->panel12->SuspendLayout();
-			this->panel14->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox79))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox80))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox81))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox82))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox83))->BeginInit();
+			this->panel14->SuspendLayout();
 			this->panel15->SuspendLayout();
-			this->panel16->SuspendLayout();
 			this->panel17->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox84))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox85))->BeginInit();
@@ -1169,13 +1166,12 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox87))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox88))->BeginInit();
 			this->panel18->SuspendLayout();
-			this->panel19->SuspendLayout();
-			this->panel20->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox89))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox90))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox91))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox92))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox93))->BeginInit();
+			this->panel20->SuspendLayout();
 			this->panel21->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox98))->BeginInit();
 			this->panel23->SuspendLayout();
@@ -2004,7 +2000,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->button12->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
 			this->button12->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button12.Image")));
-			this->button12->Location = System::Drawing::Point(834, 671);
+			this->button12->Location = System::Drawing::Point(834, 670);
 			this->button12->Name = L"button12";
 			this->button12->Size = System::Drawing::Size(317, 44);
 			this->button12->TabIndex = 4;
@@ -3894,7 +3890,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 				static_cast<System::Byte>(0)));
 			this->button15->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->button15->Location = System::Drawing::Point(975, 719);
+			this->button15->Location = System::Drawing::Point(975, 721);
 			this->button15->Name = L"button15";
 			this->button15->Size = System::Drawing::Size(261, 36);
 			this->button15->TabIndex = 7;
@@ -4328,7 +4324,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 				static_cast<System::Byte>(0)));
 			this->button17->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->button17->Location = System::Drawing::Point(494, 704);
+			this->button17->Location = System::Drawing::Point(497, 704);
 			this->button17->Name = L"button17";
 			this->button17->Size = System::Drawing::Size(261, 36);
 			this->button17->TabIndex = 8;
@@ -4862,7 +4858,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 				static_cast<System::Byte>(0)));
 			this->button19->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->button19->Location = System::Drawing::Point(513, 729);
+			this->button19->Location = System::Drawing::Point(512, 729);
 			this->button19->Name = L"button19";
 			this->button19->Size = System::Drawing::Size(261, 36);
 			this->button19->TabIndex = 31;
@@ -5096,6 +5092,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->button21->TabIndex = 31;
 			this->button21->Text = L"END GAME";
 			this->button21->UseVisualStyleBackColor = true;
+			this->button21->MouseEnter += gcnew System::EventHandler(this, &MyForm::button21_MouseEnter);
 			// 
 			// button22
 			// 
@@ -5111,27 +5108,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->button22->Size = System::Drawing::Size(261, 36);
 			this->button22->TabIndex = 32;
 			this->button22->UseVisualStyleBackColor = true;
-			// 
-			// panel14
-			// 
-			this->panel14->Controls->Add(this->label162);
-			this->panel14->Location = System::Drawing::Point(822, 27);
-			this->panel14->Name = L"panel14";
-			this->panel14->Size = System::Drawing::Size(420, 100);
-			this->panel14->TabIndex = 30;
-			// 
-			// label162
-			// 
-			this->label162->AutoSize = true;
-			this->label162->Font = (gcnew System::Drawing::Font(L"KEANON ExtBd Demo Version", 20.03478F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label162->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(2)), static_cast<System::Int32>(static_cast<System::Byte>(109)),
-				static_cast<System::Int32>(static_cast<System::Byte>(194)));
-			this->label162->Location = System::Drawing::Point(43, 31);
-			this->label162->Name = L"label162";
-			this->label162->Size = System::Drawing::Size(361, 44);
-			this->label162->TabIndex = 4;
-			this->label162->Text = L"PLAYERplay";
+			this->button22->Click += gcnew System::EventHandler(this, &MyForm::button22_Click);
+			this->button22->MouseLeave += gcnew System::EventHandler(this, &MyForm::button22_MouseLeave);
 			// 
 			// pictureBox79
 			// 
@@ -5205,61 +5183,71 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->pictureBox83->TabIndex = 0;
 			this->pictureBox83->TabStop = false;
 			// 
+			// panel14
+			// 
+			this->panel14->Controls->Add(this->label162);
+			this->panel14->Location = System::Drawing::Point(822, 27);
+			this->panel14->Name = L"panel14";
+			this->panel14->Size = System::Drawing::Size(420, 100);
+			this->panel14->TabIndex = 30;
+			// 
+			// label162
+			// 
+			this->label162->AutoSize = true;
+			this->label162->Font = (gcnew System::Drawing::Font(L"KEANON ExtBd Demo Version", 20.03478F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label162->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(2)), static_cast<System::Int32>(static_cast<System::Byte>(109)),
+				static_cast<System::Int32>(static_cast<System::Byte>(194)));
+			this->label162->Location = System::Drawing::Point(43, 31);
+			this->label162->Name = L"label162";
+			this->label162->Size = System::Drawing::Size(361, 44);
+			this->label162->TabIndex = 4;
+			this->label162->Text = L"PLAYERplay";
+			// 
 			// panel15
 			// 
 			this->panel15->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->panel15->Controls->Add(this->panel16);
+			this->panel15->Controls->Add(this->label193);
+			this->panel15->Controls->Add(this->label192);
+			this->panel15->Controls->Add(this->label188);
+			this->panel15->Controls->Add(this->label187);
+			this->panel15->Controls->Add(this->label183);
+			this->panel15->Controls->Add(this->label182);
+			this->panel15->Controls->Add(this->label178);
+			this->panel15->Controls->Add(this->label177);
+			this->panel15->Controls->Add(this->label191);
+			this->panel15->Controls->Add(this->label173);
+			this->panel15->Controls->Add(this->label186);
+			this->panel15->Controls->Add(this->label172);
+			this->panel15->Controls->Add(this->label181);
+			this->panel15->Controls->Add(this->label190);
+			this->panel15->Controls->Add(this->label176);
+			this->panel15->Controls->Add(this->label185);
+			this->panel15->Controls->Add(this->label171);
+			this->panel15->Controls->Add(this->label180);
+			this->panel15->Controls->Add(this->label189);
+			this->panel15->Controls->Add(this->label175);
+			this->panel15->Controls->Add(this->label184);
+			this->panel15->Controls->Add(this->label170);
+			this->panel15->Controls->Add(this->label179);
+			this->panel15->Controls->Add(this->label174);
+			this->panel15->Controls->Add(this->label169);
+			this->panel15->Controls->Add(this->button23);
+			this->panel15->Controls->Add(this->button24);
+			this->panel15->Controls->Add(this->pictureBox84);
+			this->panel15->Controls->Add(this->pictureBox85);
+			this->panel15->Controls->Add(this->pictureBox86);
+			this->panel15->Controls->Add(this->pictureBox87);
+			this->panel15->Controls->Add(this->label166);
+			this->panel15->Controls->Add(this->label167);
+			this->panel15->Controls->Add(this->pictureBox88);
+			this->panel15->Controls->Add(this->panel17);
 			this->panel15->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel15->Location = System::Drawing::Point(0, 0);
 			this->panel15->Name = L"panel15";
 			this->panel15->Size = System::Drawing::Size(1262, 789);
 			this->panel15->TabIndex = 12;
-			// 
-			// panel16
-			// 
-			this->panel16->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
-				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->panel16->Controls->Add(this->label193);
-			this->panel16->Controls->Add(this->label192);
-			this->panel16->Controls->Add(this->label188);
-			this->panel16->Controls->Add(this->label187);
-			this->panel16->Controls->Add(this->label183);
-			this->panel16->Controls->Add(this->label182);
-			this->panel16->Controls->Add(this->label178);
-			this->panel16->Controls->Add(this->label177);
-			this->panel16->Controls->Add(this->label191);
-			this->panel16->Controls->Add(this->label173);
-			this->panel16->Controls->Add(this->label186);
-			this->panel16->Controls->Add(this->label172);
-			this->panel16->Controls->Add(this->label181);
-			this->panel16->Controls->Add(this->label190);
-			this->panel16->Controls->Add(this->label176);
-			this->panel16->Controls->Add(this->label185);
-			this->panel16->Controls->Add(this->label171);
-			this->panel16->Controls->Add(this->label180);
-			this->panel16->Controls->Add(this->label189);
-			this->panel16->Controls->Add(this->label175);
-			this->panel16->Controls->Add(this->label184);
-			this->panel16->Controls->Add(this->label170);
-			this->panel16->Controls->Add(this->label179);
-			this->panel16->Controls->Add(this->label174);
-			this->panel16->Controls->Add(this->label169);
-			this->panel16->Controls->Add(this->button23);
-			this->panel16->Controls->Add(this->button24);
-			this->panel16->Controls->Add(this->panel17);
-			this->panel16->Controls->Add(this->pictureBox84);
-			this->panel16->Controls->Add(this->pictureBox85);
-			this->panel16->Controls->Add(this->pictureBox86);
-			this->panel16->Controls->Add(this->pictureBox87);
-			this->panel16->Controls->Add(this->label166);
-			this->panel16->Controls->Add(this->label167);
-			this->panel16->Controls->Add(this->pictureBox88);
-			this->panel16->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel16->Location = System::Drawing::Point(0, 0);
-			this->panel16->Name = L"panel16";
-			this->panel16->Size = System::Drawing::Size(1262, 789);
-			this->panel16->TabIndex = 26;
 			// 
 			// label193
 			// 
@@ -5595,7 +5583,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 				static_cast<System::Byte>(0)));
 			this->button23->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->button23->Location = System::Drawing::Point(513, 729);
+			this->button23->Location = System::Drawing::Point(514, 729);
 			this->button23->Name = L"button23";
 			this->button23->Size = System::Drawing::Size(261, 36);
 			this->button23->TabIndex = 31;
@@ -5717,74 +5705,63 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			// 
 			this->panel18->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->panel18->Controls->Add(this->panel19);
+			this->panel18->Controls->Add(this->label240);
+			this->panel18->Controls->Add(this->label219);
+			this->panel18->Controls->Add(this->label239);
+			this->panel18->Controls->Add(this->label218);
+			this->panel18->Controls->Add(this->label235);
+			this->panel18->Controls->Add(this->label214);
+			this->panel18->Controls->Add(this->label234);
+			this->panel18->Controls->Add(this->label213);
+			this->panel18->Controls->Add(this->label230);
+			this->panel18->Controls->Add(this->label209);
+			this->panel18->Controls->Add(this->label229);
+			this->panel18->Controls->Add(this->label208);
+			this->panel18->Controls->Add(this->label225);
+			this->panel18->Controls->Add(this->label204);
+			this->panel18->Controls->Add(this->label238);
+			this->panel18->Controls->Add(this->label217);
+			this->panel18->Controls->Add(this->label224);
+			this->panel18->Controls->Add(this->label203);
+			this->panel18->Controls->Add(this->label233);
+			this->panel18->Controls->Add(this->label212);
+			this->panel18->Controls->Add(this->label228);
+			this->panel18->Controls->Add(this->label207);
+			this->panel18->Controls->Add(this->label237);
+			this->panel18->Controls->Add(this->label216);
+			this->panel18->Controls->Add(this->label223);
+			this->panel18->Controls->Add(this->label202);
+			this->panel18->Controls->Add(this->label232);
+			this->panel18->Controls->Add(this->label211);
+			this->panel18->Controls->Add(this->label241);
+			this->panel18->Controls->Add(this->label227);
+			this->panel18->Controls->Add(this->label220);
+			this->panel18->Controls->Add(this->label236);
+			this->panel18->Controls->Add(this->label206);
+			this->panel18->Controls->Add(this->label222);
+			this->panel18->Controls->Add(this->label215);
+			this->panel18->Controls->Add(this->label231);
+			this->panel18->Controls->Add(this->label201);
+			this->panel18->Controls->Add(this->label226);
+			this->panel18->Controls->Add(this->label210);
+			this->panel18->Controls->Add(this->label221);
+			this->panel18->Controls->Add(this->label205);
+			this->panel18->Controls->Add(this->label200);
+			this->panel18->Controls->Add(this->button14);
+			this->panel18->Controls->Add(this->button25);
+			this->panel18->Controls->Add(this->pictureBox89);
+			this->panel18->Controls->Add(this->pictureBox90);
+			this->panel18->Controls->Add(this->pictureBox91);
+			this->panel18->Controls->Add(this->pictureBox92);
+			this->panel18->Controls->Add(this->label157);
+			this->panel18->Controls->Add(this->label155);
+			this->panel18->Controls->Add(this->pictureBox93);
+			this->panel18->Controls->Add(this->panel20);
 			this->panel18->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel18->Location = System::Drawing::Point(0, 0);
 			this->panel18->Name = L"panel18";
 			this->panel18->Size = System::Drawing::Size(1262, 789);
 			this->panel18->TabIndex = 34;
-			// 
-			// panel19
-			// 
-			this->panel19->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
-				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->panel19->Controls->Add(this->label240);
-			this->panel19->Controls->Add(this->label219);
-			this->panel19->Controls->Add(this->label239);
-			this->panel19->Controls->Add(this->label218);
-			this->panel19->Controls->Add(this->label235);
-			this->panel19->Controls->Add(this->label214);
-			this->panel19->Controls->Add(this->label234);
-			this->panel19->Controls->Add(this->label213);
-			this->panel19->Controls->Add(this->label230);
-			this->panel19->Controls->Add(this->label209);
-			this->panel19->Controls->Add(this->label229);
-			this->panel19->Controls->Add(this->label208);
-			this->panel19->Controls->Add(this->label225);
-			this->panel19->Controls->Add(this->label204);
-			this->panel19->Controls->Add(this->label238);
-			this->panel19->Controls->Add(this->label217);
-			this->panel19->Controls->Add(this->label224);
-			this->panel19->Controls->Add(this->label203);
-			this->panel19->Controls->Add(this->label233);
-			this->panel19->Controls->Add(this->label212);
-			this->panel19->Controls->Add(this->label228);
-			this->panel19->Controls->Add(this->label207);
-			this->panel19->Controls->Add(this->label237);
-			this->panel19->Controls->Add(this->label216);
-			this->panel19->Controls->Add(this->label223);
-			this->panel19->Controls->Add(this->label202);
-			this->panel19->Controls->Add(this->label232);
-			this->panel19->Controls->Add(this->label211);
-			this->panel19->Controls->Add(this->label241);
-			this->panel19->Controls->Add(this->label227);
-			this->panel19->Controls->Add(this->label220);
-			this->panel19->Controls->Add(this->label236);
-			this->panel19->Controls->Add(this->label206);
-			this->panel19->Controls->Add(this->label222);
-			this->panel19->Controls->Add(this->label215);
-			this->panel19->Controls->Add(this->label231);
-			this->panel19->Controls->Add(this->label201);
-			this->panel19->Controls->Add(this->label226);
-			this->panel19->Controls->Add(this->label210);
-			this->panel19->Controls->Add(this->label221);
-			this->panel19->Controls->Add(this->label205);
-			this->panel19->Controls->Add(this->label200);
-			this->panel19->Controls->Add(this->button14);
-			this->panel19->Controls->Add(this->button25);
-			this->panel19->Controls->Add(this->panel20);
-			this->panel19->Controls->Add(this->pictureBox89);
-			this->panel19->Controls->Add(this->pictureBox90);
-			this->panel19->Controls->Add(this->pictureBox91);
-			this->panel19->Controls->Add(this->pictureBox92);
-			this->panel19->Controls->Add(this->label157);
-			this->panel19->Controls->Add(this->label155);
-			this->panel19->Controls->Add(this->pictureBox93);
-			this->panel19->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel19->Location = System::Drawing::Point(0, 0);
-			this->panel19->Name = L"panel19";
-			this->panel19->Size = System::Drawing::Size(1262, 789);
-			this->panel19->TabIndex = 27;
 			// 
 			// label240
 			// 
@@ -6366,27 +6343,6 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->button25->Click += gcnew System::EventHandler(this, &MyForm::button25_Click);
 			this->button25->MouseLeave += gcnew System::EventHandler(this, &MyForm::button25_MouseLeave);
 			// 
-			// panel20
-			// 
-			this->panel20->Controls->Add(this->label156);
-			this->panel20->Location = System::Drawing::Point(822, 27);
-			this->panel20->Name = L"panel20";
-			this->panel20->Size = System::Drawing::Size(420, 100);
-			this->panel20->TabIndex = 30;
-			// 
-			// label156
-			// 
-			this->label156->AutoSize = true;
-			this->label156->Font = (gcnew System::Drawing::Font(L"KEANON ExtBd Demo Version", 20.03478F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label156->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(2)), static_cast<System::Int32>(static_cast<System::Byte>(109)),
-				static_cast<System::Int32>(static_cast<System::Byte>(194)));
-			this->label156->Location = System::Drawing::Point(43, 31);
-			this->label156->Name = L"label156";
-			this->label156->Size = System::Drawing::Size(361, 44);
-			this->label156->TabIndex = 4;
-			this->label156->Text = L"PLAYERplay";
-			// 
 			// pictureBox89
 			// 
 			this->pictureBox89->Location = System::Drawing::Point(985, 202);
@@ -6458,6 +6414,27 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->pictureBox93->Size = System::Drawing::Size(674, 557);
 			this->pictureBox93->TabIndex = 0;
 			this->pictureBox93->TabStop = false;
+			// 
+			// panel20
+			// 
+			this->panel20->Controls->Add(this->label156);
+			this->panel20->Location = System::Drawing::Point(822, 27);
+			this->panel20->Name = L"panel20";
+			this->panel20->Size = System::Drawing::Size(420, 100);
+			this->panel20->TabIndex = 30;
+			// 
+			// label156
+			// 
+			this->label156->AutoSize = true;
+			this->label156->Font = (gcnew System::Drawing::Font(L"KEANON ExtBd Demo Version", 20.03478F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label156->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(2)), static_cast<System::Int32>(static_cast<System::Byte>(109)),
+				static_cast<System::Int32>(static_cast<System::Byte>(194)));
+			this->label156->Location = System::Drawing::Point(43, 31);
+			this->label156->Name = L"label156";
+			this->label156->Size = System::Drawing::Size(361, 44);
+			this->label156->TabIndex = 4;
+			this->label156->Text = L"PLAYERplay";
 			// 
 			// panel21
 			// 
@@ -6616,7 +6593,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 				static_cast<System::Byte>(0)));
 			this->button26->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(30)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->button26->Location = System::Drawing::Point(512, 729);
+			this->button26->Location = System::Drawing::Point(514, 729);
 			this->button26->Name = L"button26";
 			this->button26->Size = System::Drawing::Size(261, 36);
 			this->button26->TabIndex = 31;
@@ -7011,15 +6988,15 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1262, 789);
-			this->Controls->Add(this->panel1);
-			this->Controls->Add(this->panel12);
+			this->Controls->Add(this->panel15);
+			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel3);
+			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->panel18);
+			this->Controls->Add(this->panel12);
+			this->Controls->Add(this->panel21);
 			this->Controls->Add(this->panel4);
 			this->Controls->Add(this->panel10);
-			this->Controls->Add(this->panel2);
-			this->Controls->Add(this->panel21);
-			this->Controls->Add(this->panel18);
-			this->Controls->Add(this->panel15);
 			this->Controls->Add(this->panel5);
 			this->Controls->Add(this->panel6);
 			this->Controls->Add(this->panel8);
@@ -7132,16 +7109,15 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			this->panel11->PerformLayout();
 			this->panel12->ResumeLayout(false);
 			this->panel12->PerformLayout();
-			this->panel14->ResumeLayout(false);
-			this->panel14->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox79))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox80))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox81))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox82))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox83))->EndInit();
+			this->panel14->ResumeLayout(false);
+			this->panel14->PerformLayout();
 			this->panel15->ResumeLayout(false);
-			this->panel16->ResumeLayout(false);
-			this->panel16->PerformLayout();
+			this->panel15->PerformLayout();
 			this->panel17->ResumeLayout(false);
 			this->panel17->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox84))->EndInit();
@@ -7150,15 +7126,14 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox87))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox88))->EndInit();
 			this->panel18->ResumeLayout(false);
-			this->panel19->ResumeLayout(false);
-			this->panel19->PerformLayout();
-			this->panel20->ResumeLayout(false);
-			this->panel20->PerformLayout();
+			this->panel18->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox89))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox90))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox91))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox92))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox93))->EndInit();
+			this->panel20->ResumeLayout(false);
+			this->panel20->PerformLayout();
 			this->panel21->ResumeLayout(false);
 			this->panel21->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox98))->EndInit();
@@ -7360,7 +7335,6 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			MessageBox::Show("Panel or TextBox not found: " + panelNameManaged + " / " + textBoxNameManaged);
 		}
 
-
 		void AssignLabelHandlers(Control::ControlCollection^ controls, int start, int end, System::EventHandler^ handler) {
 			for (int i = start; i <= end; ++i) {
 			// Find the label by name
@@ -7411,51 +7385,53 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 		void update_board_X() {
 			if (RMo) {
 				if (gamenum == 1) {
-					
-					player1.getmove(countj, counti);
-					boardgm1.update_board(countj, counti, 'X');
-					std::string cll = FindKeyByPair(labelIndexMap1, std::make_pair(countj, counti));
-					UpdateLabelText3("panel8", "label" + cll, "X", "X");
-					if (boardgm1.is_win())
-					{
-						panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
-						panel6->BringToFront();
-						//label101->Text = label98->Text;
-					}
-					turn = !turn;
-					if(RMb && !boardgm1.is_win())
-						update_board_O();
-				}
-				else if (gamenum == 6) {
-					player6.getmove(countj, counti);
-					if (boardgm6.update_board(countj, counti, 'X')) {
-						std::string cll = FindKeyByPair(labelIndexMap6, std::make_pair(countj, counti));
-						UpdateLabelText3("panel10", "label" + cll, "X", "X");
-						if (boardgm6.is_win())
+					if (!boardgm1.is_draw() && !boardgm1.is_win()) {
+						player1.getmove(countj, counti);
+						boardgm1.update_board(countj, counti, 'X');
+						std::string cll = FindKeyByPair(labelIndexMap1, std::make_pair(countj, counti));
+						UpdateLabelText3("panel8", "label" + cll, "X", "X");
+						if (boardgm1.is_win())
 						{
-							panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+							panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
 							panel6->BringToFront();
 							//label101->Text = label98->Text;
 						}
-						if (boardgm6.is_draw())
-						{
-							panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
-							panel6->BringToFront();
-							//label101->Text = "DRAW";
-							label121->Text = "";
-						}
 						turn = !turn;
-						if (RMb && !boardgm6.is_win())
+						if (RMb && !boardgm1.is_win())
 							update_board_O();
 					}
-					else
-						update_board_X();
-
+				}
+				else if (gamenum == 6) {
+					if (!boardgm6.is_draw() && !boardgm6.is_win()) {
+						player6.getmove(countj, counti);
+						if (boardgm6.update_board(countj, counti, 'X')) {
+							std::string cll = FindKeyByPair(labelIndexMap6, std::make_pair(countj, counti));
+							UpdateLabelText3("panel10", "label" + cll, "X", "X");
+							if (boardgm6.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+							}
+							if (boardgm6.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+							}
+							turn = !turn;
+							if (RMb && !boardgm6.is_win())
+								update_board_O();
+						}
+						else
+							update_board_X();
+					}
 
 				}
 				else if (gamenum == 4) {
 					player4.getmove(countj, counti);
-					if (boardgm4.update_board(countj, counti, 'X')) {
+					if (boardgm4.update_board(countj, counti, player4.get_symbol()[0])) {
 						std::string cll = FindKeyByPair(labelIndexMap4, std::make_pair(countj, counti));
 						UpdateTextBoxText("panel12", "textBox" + cll, player4.get_symbol(), "X");
 						if (boardgm4.is_win())
@@ -7464,6 +7440,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 							panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
 							panel6->BringToFront();
 							//label101->Text = label98->Text;
+							return;
 						}
 						if (boardgm4.is_draw())
 						{
@@ -7471,6 +7448,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 							panel6->BringToFront();
 							//label101->Text = "DRAW";
 							label121->Text = "";
+							return;
 						}
 						turn = !turn;
 						if (RMb && !boardgm4.is_win())
@@ -7481,38 +7459,149 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 
 
 				}
+				else if (gamenum == 5) {
+					if (!boardgm5.is_draw() && !boardgm5.is_win()) {
+						player5.getmove(countj, counti);
+						if (boardgm5.update_board(countj, counti, player5.selectedNumber)) {
+							player5.del_vec(player5.numberIndex);
+							player5.valid = false;
+							std::string cll = FindKeyByPair(labelIndexMap5, std::make_pair(countj, counti));
+							UpdateLabelText3("panel21", "label" + cll, to_string(player5.selectedNumber), "X");
+							if (boardgm5.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+							}
+							if (boardgm5.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+							}
+							turn = !turn;
+							if (RMb && !boardgm5.is_win())
+								update_board_O();
+						}
+						else
+							update_board_X();
+
+					}
+				}
+				else if (gamenum == 2) {
+					if (!boardgm2.is_win() && !boardgm2.is_draw()) {
+
+						player2.getmove(countj, counti);
+						if (boardgm2.update_board(countj, counti, 'X')) {
+							std::string cll = FindKeyByPair(labelIndexMap2, std::make_pair(countj, counti));
+							UpdateLabelText3("panel18", "label" + cll, "X", "X");
+							if (boardgm2.is_win())
+							{
+
+								panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+								return;
+							}
+							if (boardgm2.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+								return;
+							}
+							turn = !turn;
+							if (RMb && !boardgm2.is_win())
+								update_board_O();
+						}
+						else
+							update_board_X();
+
+					}
+				}
+				else if (gamenum == 3) {
+					if (!boardgm3.is_draw() && !boardgm3.is_win()) {
+						player3.getmove(countj, counti);
+						if (boardgm3.update_board(countj, counti, 'X')) {
+							std::string cll = FindKeyByPair(labelIndexMap3, std::make_pair(countj, counti));
+							UpdateLabelText3("panel15", "label" + cll, "X", "X");
+							if (boardgm3.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+							}
+							if (boardgm3.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+							}
+							countturn++;
+							turn = !turn;
+							if (RMb && !boardgm3.is_win())
+								update_board_O();
+						}
+						else
+							update_board_X();
+					}
+
+					}
 
 			}
-		}
-		void update_board_O(){
-			if (RMb) {
+			else if (AIo) {
 				if (gamenum == 1) {
-					
-					player1.getmove(countj, counti);
-					boardgm1.update_board(countj, counti, 'O');
-					std::string cll = FindKeyByPair(labelIndexMap1, std::make_pair(countj, counti));
-
-					UpdateLabelText3("panel8", "label" + cll, "O", "O");
-					if (boardgm1.is_win())
-					{
-						panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
-						panel6->BringToFront();
-						//label101->Text = label98->Text;
-					}
-					turn = !turn;
-					if (RMo && !boardgm1.is_win())
-						update_board_X();
-				}
-				else if (gamenum == 6) {
-					player6.getmove(countj, counti);
-					if (boardgm6.update_board(countj, counti, 'O')) {
-						std::string cll = FindKeyByPair(labelIndexMap6, std::make_pair(countj, counti));
-						UpdateLabelText3("panel10", "label" + cll, "O", "O");
-						if (boardgm6.is_win())
+					if (!boardgm1.is_draw() && !boardgm1.is_win()) {
+						playerAI1.set_board(boardgm1.get_board());
+						playerAI1.set_Symbol('X');
+						playerAI1.getmove(countj, counti);
+						boardgm1.update_board(countj, counti, 'X');
+						if (RMb) {
+							boardgm1.del_vec(countj, counti, player1.vec);
+						}
+						std::string cll = FindKeyByPair(labelIndexMap1, std::make_pair(countj, counti));
+						UpdateLabelText3("panel8", "label" + cll, "X", "X");
+						if (boardgm1.is_win())
 						{
 							panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
 							panel6->BringToFront();
 							//label101->Text = label98->Text;
+							return;
+						}
+						if (boardgm1.is_draw())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+							panel6->BringToFront();
+							//label101->Text = "DRAW";
+							label121->Text = "";
+							return;
+						}
+						turn = !turn;
+						if (RMb && !boardgm1.is_win()) {
+							update_board_O();
+						}
+						if (AIb && !boardgm1.is_win())
+							update_board_O();
+					}
+				}
+				if (gamenum == 6) {
+					if (!boardgm6.is_draw() && !boardgm6.is_win()) {
+
+						playerAI6.set_board(boardgm6.get_board());
+						playerAI6.set_Symbol('X');
+						playerAI6.getmove(countj, counti);
+						boardgm6.update_board(countj, counti, 'X');
+						std::string cll = FindKeyByPair(labelIndexMap6, std::make_pair(countj, counti));
+						UpdateLabelText3("panel10", "label" + cll, "X", "X");
+						if (boardgm6.is_win())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+							panel6->BringToFront();
+							//label101->Text = label98->Text;
+							return;
 						}
 						if (boardgm6.is_draw())
 						{
@@ -7520,17 +7609,255 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 							panel6->BringToFront();
 							//label101->Text = "DRAW";
 							label121->Text = "";
+							return;
 						}
 						turn = !turn;
-						if (RMb && !boardgm6.is_win())
+						if (AIb && !boardgm6.is_win())
 							update_board_O();
+					}
+				}
+				}
+
+		}
+		void update_board_O(){
+			if (RMb) {
+				if (gamenum == 1) {
+					if (!boardgm1.is_draw() && !boardgm1.is_win()) {
+						player1.getmove(countj, counti);
+						boardgm1.update_board(countj, counti, 'O');
+						std::string cll = FindKeyByPair(labelIndexMap1, std::make_pair(countj, counti));
+
+						UpdateLabelText3("panel8", "label" + cll, "O", "O");
+						if (boardgm1.is_win())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+							panel6->BringToFront();
+							//label101->Text = label98->Text;
+						}
+						turn = !turn;
+						if (RMo && !boardgm1.is_win())
+							update_board_X();
+					}
+				}
+				else if (gamenum == 6) {
+					if (!boardgm6.is_draw() && !boardgm6.is_win()) {
+						player6.getmove(countj, counti);
+						if (boardgm6.update_board(countj, counti, 'O')) {
+							std::string cll = FindKeyByPair(labelIndexMap6, std::make_pair(countj, counti));
+							UpdateLabelText3("panel10", "label" + cll, "O", "O");
+							if (boardgm6.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+							}
+							if (boardgm6.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+							}
+							turn = !turn;
+							if (RMo && !boardgm6.is_win())
+								update_board_X();
+						}
+						else
+							update_board_O();
+					}
+
+				}
+				else if (gamenum == 4) {
+					player4.getmove(countj, counti);
+					if (boardgm4.update_board(countj, counti, player4.get_symbol()[0])) {
+						std::string cll = FindKeyByPair(labelIndexMap4, std::make_pair(countj, counti));
+						UpdateTextBoxText("panel12", "textBox" + cll, player4.get_symbol(), "O");
+						if (boardgm4.is_win())
+						{
+
+							panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+							panel6->BringToFront();
+							//label101->Text = label98->Text;
+							return;
+						}
+						if (boardgm4.is_draw())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+							panel6->BringToFront();
+							//label101->Text = "DRAW";
+							label121->Text = "";
+							return;
+						}
+						turn = !turn;
+						if (RMo && !boardgm4.is_win())
+							update_board_X();
+
 					}
 					else
 						update_board_O();
 
 
 				}
+				else if (gamenum == 5) {
+					if (!boardgm5.is_draw() && !boardgm5.is_win()) {
 
+						player5.getmove(countj, counti);
+						if (boardgm5.update_board(countj, counti, player5.selectedNumber)) {
+							player5.del_vec(player5.numberIndex);
+							player5.valid = true;
+							std::string cll = FindKeyByPair(labelIndexMap5, std::make_pair(countj, counti));
+							UpdateLabelText3("panel21", "label" + cll, to_string(player5.selectedNumber), "O");
+							if (boardgm5.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+							}
+							if (boardgm5.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+							}
+							turn = !turn;
+							if (RMo && !boardgm5.is_win())
+								update_board_X();
+						}
+						else
+							update_board_O();
+
+					}
+				}
+				else if (gamenum == 2) {
+					if (!boardgm2.is_win() && !boardgm2.is_draw()) {
+
+						player2.getmove(countj, counti);
+						if (boardgm2.update_board(countj, counti, 'O')) {
+							std::string cll = FindKeyByPair(labelIndexMap2, std::make_pair(countj, counti));
+							UpdateLabelText3("panel18", "label" + cll, "O", "O");
+							if (boardgm2.is_win())
+							{
+
+								panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+								return;
+							}
+							if (boardgm2.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+								return;
+							}
+							turn = !turn;
+							if (RMo && !boardgm2.is_win())
+								update_board_X();
+							if (AIo && !boardgm2.is_win())
+								update_board_X();
+						}
+						else
+							update_board_O();
+
+					}
+				}
+				else if (gamenum == 3) {
+					if (!boardgm3.is_draw() && !boardgm3.is_win()) {
+						player3.getmove(countj, counti);
+						if (boardgm3.update_board(countj, counti, 'O')) {
+							std::string cll = FindKeyByPair(labelIndexMap3, std::make_pair(countj, counti));
+							UpdateLabelText3("panel15", "label" + cll, "O", "O");
+							if (boardgm3.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+								panel6->BringToFront();
+								//label101->Text = label98->Text;
+							}
+							if (boardgm3.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+							}
+							countturn++;
+							turn = !turn;
+							if (RMo && !boardgm3.is_win())
+								update_board_X();
+						}
+						else
+							update_board_O();
+					}
+
+					}
+
+			}
+			else if (AIb) {
+				if (gamenum == 1) {
+					if (!boardgm1.is_draw() && !boardgm1.is_win()) {
+						playerAI1.set_board(boardgm1.get_board());
+						playerAI1.set_Symbol('O');
+						playerAI1.getmove(countj, counti);
+						boardgm1.update_board(countj, counti, 'O');
+						if (RMo) {
+							boardgm1.del_vec(countj, counti, player1.vec);
+						}
+						std::string cll = FindKeyByPair(labelIndexMap1, std::make_pair(countj, counti));
+
+						UpdateLabelText3("panel8", "label" + cll, "O", "O");
+						if (boardgm1.is_win())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+							panel6->BringToFront();
+							//label101->Text = label98->Text;
+							return;
+						}
+						if (boardgm1.is_draw())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+							panel6->BringToFront();
+							//label101->Text = "DRAW";
+							label121->Text = "";
+							return;
+						}
+						turn = !turn;
+						if (RMo && !boardgm1.is_win()) {
+							update_board_X();
+						}
+						else if (AIo && !boardgm1.is_win())
+							update_board_X();
+					}
+				}
+				else if (gamenum == 6) {
+					if (!boardgm6.is_draw() && !boardgm6.is_win()) {
+						playerAI6.set_board(boardgm6.get_board());
+						playerAI6.set_Symbol('O');
+						playerAI6.getmove(countj, counti);
+						boardgm6.update_board(countj, counti, 'O');
+						std::string cll = FindKeyByPair(labelIndexMap6, std::make_pair(countj, counti));
+
+						UpdateLabelText3("panel10", "label" + cll, "O", "O");
+						if (boardgm6.is_win())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
+							panel6->BringToFront();
+							return;
+						}
+						if (boardgm6.is_draw())
+						{
+							panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+							panel6->BringToFront();
+							//label101->Text = "DRAW";
+							label121->Text = "";
+							return;
+						}
+						turn = !turn;
+						if (AIo && !boardgm6.is_win())
+							update_board_X();
+					}
+				}
 			}
 		}
 	
@@ -7749,7 +8076,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 		//store in map
 		for (int i = 242; i <= 250; ++i) {
 			labelIndexMap5[i] = std::make_pair(counti55, countj55);
-			if ((countj55 + 1) % 7 == 0) {
+			if ((countj55 + 1) % 3 == 0) {
 				counti55++;
 				countj55 = 0;
 			}
@@ -8098,7 +8425,12 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 							panel6->BringToFront();
 							//label101->Text = label98->Text;
 						}
-						if (RMb && !boardgm1.is_win())
+						if (boardgm1.is_draw()) {
+							panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+							panel6->BringToFront();
+							//label101->Text = "DRAW";
+						}
+						if (RMb ||AIb && !boardgm1.is_win())
 							update_board_O();
 					}
 					else
@@ -8123,7 +8455,12 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 							panel6->BringToFront();
 							//label101->Text = label99->Text;
 						}
-						if (RMo && !boardgm1.is_win())
+						if (boardgm1.is_draw()) {
+							panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+							panel6->BringToFront();
+							//label101->Text = "DRAW";
+						}
+						if (RMo || AIo && !boardgm1.is_win())
 							update_board_X();
 
 					}
@@ -8165,7 +8502,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 						turn = !turn;
 						pictureBox76->BringToFront();
 						pictureBox77->SendToBack();
-						if (RMb && !boardgm6.is_win())
+						if (RMb||AIb && !boardgm6.is_win())
 							update_board_O();
 
 					}
@@ -8198,7 +8535,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 						turn = !turn;
 						pictureBox77->BringToFront();
 						pictureBox76->SendToBack();
-						if (RMo && !boardgm6.is_win())
+						if (RMo||AIo && !boardgm6.is_win())
 							update_board_X();
 					}
 					else
@@ -8227,6 +8564,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 						pictureBox85->BringToFront();
 						pictureBox86->SendToBack();
 						countturn++;
+						if (RMb || AIb && !boardgm3.is_win())
+							update_board_O();
 					}
 					else
 					{
@@ -8243,7 +8582,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 						pictureBox86->BringToFront();
 						pictureBox85->SendToBack();
 						countturn++;
-
+						if (RMo || AIo && !boardgm3.is_win())
+							update_board_X();
 					}
 					else
 					{
@@ -8270,94 +8610,118 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			}
 		}
 		else if (gamenum == 2) {
-			String^ labelName = clickedLabel2->Name;
-			String^ labelNumberStr = labelName->Substring(5);
-			int ln = Int32::Parse(labelNumberStr);
-			searchInMap(ln, labelIndexMap6);
-			if (turn) {
-				if (clickedLabel2->Text == "  ") {
-					// Handle the click event here
+			if (!boardgm2.is_win() && !boardgm2.is_draw()) {
+				String^ labelName = clickedLabel2->Name;
+				String^ labelNumberStr = labelName->Substring(5);
+				int ln = Int32::Parse(labelNumberStr);
+				searchInMap(ln, labelIndexMap2);
+				if (turn) {
+					if (clickedLabel2->Text == "  ") {
+						// Handle the click event here
+						if (boardgm2.update_board(countj, counti, 'X')) {
+							clickedLabel2->Text = "X";
+							clickedLabel2->ForeColor = System::Drawing::Color::FromArgb(254, 90, 0);
 
-					clickedLabel2->Text = "X";
-					clickedLabel2->ForeColor = System::Drawing::Color::FromArgb(254, 90, 0);
-					boardgm2.update_board(countj, counti, 'X');
 
-					if (boardgm2.is_win())
-					{
-						panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
-						panel6->BringToFront();
-						//label101->Text = textBox1->Text + "\nis WON";
+							if (boardgm2.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
+								panel6->BringToFront();
+								//label101->Text = textBox1->Text + "\nis WON";
+							}
+							if (boardgm2.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+
+							}
+
+
+							turn = !turn;
+							pictureBox90->BringToFront();
+							pictureBox91->SendToBack();
+							if (RMb || AIb && !boardgm6.is_win())
+								update_board_O();
+
+						}
+						else
+						{
+							MessageBox::Show("Invalid move. Try again.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+						}
+
+
+
+
 					}
-					if (boardgm2.is_draw())
+					else
 					{
-						panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
-						panel6->BringToFront();
-						//label101->Text = "DRAW";
-						label121->Text = "";
-
+						MessageBox::Show("Invalid movessdsdsd. Try again.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 					}
 
-					
-					turn = !turn;
-					pictureBox90->BringToFront();
-					pictureBox91->SendToBack();
-					
+
+
 				}
-				else
-				{
-					MessageBox::Show("Invalid move. Try again.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				else {
+					if (clickedLabel2->Text == "  ") {
+						if (boardgm2.update_board(countj, counti, 'O')) {
+							clickedLabel2->Text = "O";
+							clickedLabel2->ForeColor = System::Drawing::Color::FromArgb(2, 109, 194);
+
+							if (boardgm2.is_win())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+								panel6->BringToFront();
+								//label101->Text = textBox1->Text + "\nis WON";
+							}
+							if (boardgm2.is_draw())
+							{
+								panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+								panel6->BringToFront();
+								//label101->Text = "DRAW";
+								label121->Text = "";
+
+							}
+
+							turn = !turn;
+							pictureBox91->BringToFront();
+							pictureBox90->SendToBack();
+							if (RMo || AIo && !boardgm6.is_win())
+								update_board_X();
+						}
+						else
+						{
+							MessageBox::Show("Invalid move. Try again.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+						}
+					}
+					else
+					{
+						MessageBox::Show("Invalid movesadsa. Try again.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+					}
 				}
 			}
-			else {
-				if (clickedLabel2->Text == "  ") {
-					clickedLabel2->Text = "O";
-					clickedLabel2->ForeColor = System::Drawing::Color::FromArgb(2, 109, 194);
-					boardgm2.update_board(countj, counti, 'O');
-
-					if (boardgm2.is_win())
-					{
-						panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
-						panel6->BringToFront();
-						//label101->Text = textBox1->Text + "\nis WON";
-					}
-					if (boardgm2.is_draw())
-					{
-						panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
-						panel6->BringToFront();
-						//label101->Text = "DRAW";
-						label121->Text = "";
-
-					}
-
-					turn = !turn;
-					pictureBox91->BringToFront();
-					pictureBox90->SendToBack();
-				}
-				else
-				{
-					MessageBox::Show("Invalid move. Try again.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				}
-			}
-
-
 		}
 		else if (gamenum == 5) {
-			String^ labelName = clickedLabel5->Name;
-			String^ labelNumberStr = labelName->Substring(5);
-			int ln = Int32::Parse(labelNumberStr);
-			searchInMap(ln, labelIndexMap5);
-			if (turn) {
-				
-				checkpress_label = true;
-				panel24->BringToFront();
+			if (!boardgm5.is_win() && !boardgm5.is_draw()) {
 
-			}
-			else {
-				
-				panel22->BringToFront();
+				String^ labelName = clickedLabel5->Name;
+				String^ labelNumberStr = labelName->Substring(5);
+				int ln = Int32::Parse(labelNumberStr);
+				searchInMap(ln, labelIndexMap5);
+				if (turn) {
 
-				checkpress_label = true;
+					checkpress_label = true;
+					panel24->BringToFront();
 
+				}
+				else {
+
+					panel22->BringToFront();
+
+					checkpress_label = true;
+
+				}
 			}
 		}
 	}
@@ -8432,78 +8796,118 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 			std::string cl = FindKeyByPair(labelIndexMap5, std::make_pair(countj, counti));
 			if (clickedButton->Name == "button28") {
 				UpdateLabelText2("label" + cl, "1", "X");
+				boardgm5.update_board(countj, counti, 1);
+				player5.del_vec(0);
 				button28->SendToBack();
 				turn = !turn;
 
 			}
 			else if (clickedButton->Name == "button29") {
 				UpdateLabelText2("label" + cl, "3", "X");
+				boardgm5.update_board(countj, counti, 3);
+				player5.del_vec(2);
 				button29->SendToBack();
 				turn = !turn;
 
 			}
 			else if (clickedButton->Name == "button30") {
 				UpdateLabelText2("label" + cl, "5", "X");
+				boardgm5.update_board(countj, counti, 5);
+				player5.del_vec(4);
 				button30->SendToBack();
 				turn = !turn;
 
 			}
 			else if (clickedButton->Name == "button31") {
 				UpdateLabelText2("label" + cl, "7", "X");
+				boardgm5.update_board(countj, counti, 7);
+				player5.del_vec(6);
 				button31->SendToBack();
 				turn = !turn;
 
 			}
 			else if (clickedButton->Name == "button32") {
 				UpdateLabelText2("label" + cl, "9", "X");
+				boardgm5.update_board(countj, counti, 9);
+				player5.del_vec(8);
 				button32->SendToBack();
 				turn = !turn;
 
 			}
+			player5.valid = false;
 			pictureBox95->BringToFront();
 			pictureBox96->SendToBack();
 			checkpress_label = false;
 			panel24->SendToBack();
-
+			if (boardgm5.is_win()) {
+				panel6->BackColor = System::Drawing::Color::FromArgb(254, 90, 0);
+				panel6->BringToFront();
+			}
+			else if (boardgm5.is_draw()) {
+				panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+				panel6->BringToFront();
+			}
+			if (RMb || AIb && !boardgm5.is_win()) {
+				update_board_O();
+			}
 		}
 		else {
 			std::string cl = FindKeyByPair(labelIndexMap5, std::make_pair(countj, counti));
 			if (clickedButton->Name == "button38") {
 				UpdateLabelText2("label" + cl, "2", "O");
+				boardgm5.update_board(countj, counti, 2);
+				player5.del_vec(1);
 				button38->SendToBack();
 				turn = !turn;
 
 			}
 			else if (clickedButton->Name == "button39") {
 				UpdateLabelText2("label" + cl, "4", "O");
+				boardgm5.update_board(countj, counti, 4);
+				player5.del_vec(3);
 				button39->SendToBack();
 				turn = !turn;
 
 			}
 			else if (clickedButton->Name == "button40") {
 				UpdateLabelText2("label" + cl, "6", "O");
+				boardgm5.update_board(countj, counti, 6);
+				player5.del_vec(5);
 				button40->SendToBack();
 				turn = !turn;
 
 			}
 			else if (clickedButton->Name == "button41") {
 				UpdateLabelText2("label" + cl, "8", "O");
+				boardgm5.update_board(countj, counti, 8);
+				player5.del_vec(7);
 				button41->SendToBack();
 				turn = !turn;
 
 			}
+			player5.valid = true;
 			pictureBox96->BringToFront();
 			pictureBox95->SendToBack();
 			panel22->SendToBack();
 			checkpress_label = false;
-
+			if (boardgm5.is_win()) {
+				panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
+				panel6->BringToFront();
+			}
+			else if (boardgm5.is_draw()) {
+				panel6->BackColor = System::Drawing::Color::FromArgb(43, 43, 43);
+				panel6->BringToFront();
+			}
+			if (RMo || AIo && !boardgm5.is_win())
+				update_board_X();
 		}
-
+		
 	}
 	private: System::Void button_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (checkpress_label) {
 			Button^ clickedButton = safe_cast<Button^>(sender);
 			HandleButtonClick(clickedButton);
+			
 		}
 		else {
 			MessageBox::Show("Please choose the palace first", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
@@ -8597,6 +9001,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 						panel6->BringToFront();
 						
 					}
+					if (RMb && !boardgm4.is_win())
+						update_board_O();
 				}
 			}
 		}
@@ -8633,7 +9039,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox100;
 						panel6->BackColor = System::Drawing::Color::FromArgb(2, 109, 194);
 						panel6->BringToFront();
 					}
-					update_board_X();
+					if (RMo && !boardgm4.is_win())
+						update_board_X();
 				}
 			}
 		}
@@ -9014,22 +9421,29 @@ private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ 
 	
 	if (gamenum==1) {
 		panel8->BringToFront();
-		if(RMo)
+		if(RMo||AIo)
 			update_board_X();
+
 	}
 	else if (gamenum==5) {
 		panel21->BringToFront();
+		if (RMo || AIo)
+			update_board_X();
 	}
 	else if (gamenum == 2) {
 		panel18->BringToFront();
+		if (RMo || AIo)
+			update_board_X();
 	}
 	else if (gamenum==6) {
 		panel10->BringToFront();
-		if (RMo)
+		if (RMo||AIo)
 			update_board_X();
 	}
 	else if (gamenum==3) {
 		panel15->BringToFront();
+		if (RMo || AIo)
+			update_board_X();
 	}
 	else if (gamenum==4) {
 		panel12->BringToFront();
@@ -9091,7 +9505,9 @@ private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ 
 			Label^ label = safe_cast<Label^>(this->Controls->Find("label" + i, true)[0]);
 			label->Text = "  ";
 		}
-		
+		boardgm8.reset_board();
+		pictureBox2_Click(sender, e);
+		set_deafult();
 	}
 	
 }
@@ -9144,6 +9560,9 @@ private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ 
 		label118->Text = "O";
 		label119->Text = "X";
 		label120->Text = "O";
+		boardgm7.reset_board();
+		pictureBox2_Click(sender, e);
+		set_deafult();
 	}
 }
 private: System::Void pictureBox39_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -9221,7 +9640,11 @@ private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ 
 			Label^ label = safe_cast<Label^>(this->Controls->Find("label" + i, true)[0]);
 			label->Text = "  ";
 		}
-
+		boardgm1.reset_board();
+		player1.reset_vec();
+		pictureBox2_Click(sender, e);
+		set_deafult();
+		playerAI1.reset();
 	}
 }
 private: System::Void button19_MouseEnter(System::Object^ sender, System::EventArgs^ e) {
@@ -9249,7 +9672,10 @@ private: System::Void button20_Click(System::Object^ sender, System::EventArgs^ 
 			Label^ label = safe_cast<Label^>(this->Controls->Find("label" + i, true)[0]);
 			label->Text = "  ";
 		}
-
+		boardgm6.reset_board();
+		playerAI6.reset();
+		pictureBox2_Click(sender, e);
+		set_deafult();
 	}
 }
 
@@ -9276,6 +9702,9 @@ private: System::Void button24_Click(System::Object^ sender, System::EventArgs^ 
 			label->Text = "  ";
 		}
 		countturn = 0;
+		boardgm3.reset_board();
+		pictureBox2_Click(sender, e);
+		set_deafult();
 	}
 }
 private: System::Void button24_MouseLeave(System::Object^ sender, System::EventArgs^ e) {
@@ -9300,7 +9729,9 @@ private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ 
 			Label^ label = safe_cast<Label^>(this->Controls->Find("label" + i, true)[0]);
 			label->Text = "  ";
 		}
-
+		boardgm2.reset_board();
+		pictureBox2_Click(sender, e);
+		set_deafult();
 	}
 
 }
@@ -9341,10 +9772,44 @@ private: System::Void button27_Click(System::Object^ sender, System::EventArgs^ 
 		panel24->SendToBack();
 		panel22->SendToBack();
 		checkpress_label = false;
+		boardgm5.reset_board();
+		pictureBox2_Click(sender, e);
+		set_deafult();
 	}
 
 }
 private: System::Void panel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+private: System::Void button22_Click(System::Object^ sender, System::EventArgs^ e) {
+	System::Windows::Forms::DialogResult result =
+		MessageBox::Show("DO YOU WANT TO END GAME?",
+			"Confirmation",
+			MessageBoxButtons::OKCancel,
+			MessageBoxIcon::Warning);
+
+	// Check which button was pressed
+	if (result == System::Windows::Forms::DialogResult::OK)
+	{
+		panel1->BringToFront();
+		pictureBox81->BringToFront();
+		pictureBox80->SendToBack();
+		turn = true;
+		for (int i = 3; i <= 11; ++i)
+		{
+			TextBox^ tx = safe_cast<TextBox^>(this->Controls->Find("TextBox" + i, true)[0]);
+			tx->Text = "";
+		}
+		boardgm4.reset_board();
+		pictureBox2_Click(sender, e);
+		set_deafult();
+	}
+
+}
+private: System::Void button21_MouseEnter(System::Object^ sender, System::EventArgs^ e) {
+	button22->BringToFront();
+}
+private: System::Void button22_MouseLeave(System::Object^ sender, System::EventArgs^ e) {
+	button21->BringToFront();
 }
 };
 };

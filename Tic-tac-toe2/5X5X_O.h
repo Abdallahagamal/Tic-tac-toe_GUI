@@ -22,7 +22,21 @@ public:
     bool is_win();
     bool is_draw();
     bool game_is_over();
+    void reset_board() {
+        for (int i = 0; i < this->rows; i++) {
+            for (int j = 0; j < this->columns; j++) {
+                this->board[i][j] = '0';
+            }
+        }
+        this->n_moves = 0;
+    }
+};
 
+template <typename T>
+class X_O_Random_Player3 : public RandomPlayer<T> {
+public:
+    X_O_Random_Player3(T symbol);
+    void getmove(int& x, int& y);
 };
 
 
@@ -138,30 +152,35 @@ bool X_O_Board3<T>::win_left_diagonal(int i, int j) {
 // Returns true if there is any winner
 template <typename T>
 bool X_O_Board3<T>::is_win() {
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            count = 1;
-            // for each valied
-            winh(i, j);
-            count = 1;
-            winv(i, j);
-            count = 1;
-            win_right_diagonal(i, j);
-            count = 1;
-            win_left_diagonal(i, j);
-            
+    if (this->n_moves == 24) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                count = 1;
+                // for each valied
+                winh(i, j);
+                count = 1;
+                winv(i, j);
+                count = 1;
+                win_right_diagonal(i, j);
+                count = 1;
+                win_left_diagonal(i, j);
+
+            }
         }
-    }
-    if (count_X > count_O) {
-        return true;
+        if (count_X > count_O) {
+            return true;
+        }
     }
 	return false;
 }
 template <typename T>
 bool X_O_Board3<T>::update_board(int x, int y, T mark) {
-	this->board[x][y] = toupper(mark);
-	this->n_moves++;
-	return true;
+	if (this->board[x][y] == '0') {
+        this->board[x][y] = toupper(mark);
+        this->n_moves++;
+        return true;
+	}
+    return false;
 }
 
 
@@ -187,6 +206,19 @@ bool X_O_Board3<T>::game_is_over() {
 
 //--------------------------------------
 
+// Constructor for X_O_Random_Player
+template <typename T>
+X_O_Random_Player3<T>::X_O_Random_Player3(T symbol) : RandomPlayer<T>(symbol) {
+    this->dimension = 5;
+    this->name = "Random Computer Player";
+    srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
+}
+
+template <typename T>
+void X_O_Random_Player3<T>::getmove(int& x, int& y) {
+    x = rand() % this->dimension;  // Random number between 0 and 2
+    y = rand() % this->dimension;
+}
 
 
 

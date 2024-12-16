@@ -174,6 +174,14 @@ public:
     char showpanel(int xx, int yy);
     void win();
     std::string sboard(int x, int y);
+    void reset_board() {
+        for (int i = 0; i < this->rows; i++) {
+            for (int j = 0; j < this->columns; j++) {
+                this->board[i][j] = '0';
+            }
+        }
+        this->n_moves = 0;
+    }
 };
 
 template <typename T>

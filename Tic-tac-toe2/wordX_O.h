@@ -18,7 +18,14 @@ public:
     bool is_win();
     bool is_draw();
     bool game_is_over();
-
+	void reset_board() {
+		for (int i = 0; i < this->rows; i++) {
+			for (int j = 0; j < this->columns; j++) {
+				this->board[i][j] = '0';
+			}
+		}
+		this->n_moves = 0;
+	}
 };
 
 
@@ -105,6 +112,7 @@ void X_O_Board4<T>::display_board() {
 template <typename T>
 bool X_O_Board4<T>::is_win() {
     string x;
+    // check row
     for (int i = 0; i < this->rows; i++) {
         x.clear();
         for (int j = 0; j < this->columns; j++) {
@@ -116,9 +124,37 @@ bool X_O_Board4<T>::is_win() {
             return true;
         }
     }
+    // check row inverse
+    for (int i = 0; i < this->rows; i++) {
+        x.clear();
+        for (int j = 2; j >= 0; j--) {
+            if (this->board[i][j] != '0') {
+                x += this->board[i][j];
+            }
+        }
+        if (chekk(x)) {
+            return true;
+        }
+    }
+
+
+
+    // check column
     for (int j = 0; j < this->columns; j++) {
         x.clear();
         for (int i = 0; i < this->rows; i++) {
+            if (this->board[i][j] != '0') {
+                x += this->board[i][j];
+            }
+        }
+        if (chekk(x)) {
+            return true;
+        }
+    }
+    // check column inverse
+    for (int j = 0; j < this->columns; j++) {
+        x.clear();
+        for (int i = 2; i >= 0; i--) {
             if (this->board[i][j] != '0') {
                 x += this->board[i][j];
             }
@@ -138,16 +174,30 @@ bool X_O_Board4<T>::is_win() {
     }
 
     x.clear();
+    x += this->board[2][2];
+    x += this->board[1][1];
+    x += this->board[0][0];
+    if (chekk(x)) {
+        return true;
+    }
+
+    x.clear();
     x += this->board[0][2];
     x += this->board[1][1];
     x += this->board[2][0];
     if (chekk(x)) {
         return true;
     }
+    x.clear();
+    x += this->board[2][0];
+    x += this->board[1][1];
+    x += this->board[0][2];
+    if (chekk(x)) {
+        return true;
+    }
 
     return false;
 }
-
 template <typename T>
 bool X_O_Board4<T>::is_draw() {
     return (this->n_moves == 9 && !is_win());

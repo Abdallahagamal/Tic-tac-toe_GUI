@@ -11,8 +11,12 @@
 #include <chrono>
 #include <sstream>
 #include "4x4X_O2.h"
+#include "numX_O.h"
+#include "MinMaxPlayer1.h"
+#include "MinMaxPlayer6.h"
+
 std::string labelName77;
-int gamenum=4;
+int gamenum=6;
 int countj = 0;
 int counti = 0;
 //game8
@@ -61,21 +65,29 @@ std::map<int, std::pair<int, int>> picturebox7_O;
 std::map<int, std::pair<int, int>> labelIndexMap1;
 X_O_Board1<char> boardgm1;
 X_O_Random_Player1<char> player1('X');
-
+X_O_MinMax_Player<char> playerAI1('X');
 //game6
 X_O_Board6<char> boardgm6;
 std::map<int, std::pair<int, int>> labelIndexMap6;
 X_O_Random_Player6<char> player6('X');
+X_O_MinMax_Player6<char> playerAI6('X');
 
 //game3
 X_O_Board3<char> boardgm3;
 std::map<int, std::pair<int, int>> labelIndexMap3;
+X_O_Random_Player3<char> player3('X');
 
 //game2
 std::map<int, std::pair<int, int>> labelIndexMap2;
 X_O_Board2<char> boardgm2;
+X_O_Random_Player2<char> player2('X');
+
 //game5
 std::map<int, std::pair<int, int>> labelIndexMap5;
+X_O_Board5<char> boardgm5;
+X_O_Random_Player5<char> player5('X');
+
+
 
 //game4
 X_O_Board4<char> boardgm4;
@@ -145,7 +157,10 @@ void searchInMap(int key, std::map<int, std::pair<int, int>> labelIndexMap) {
 		std::cout << "Key " << key << " not found in the map.\n";
 	}
 }
-
+void set_deafult() {
+	AIb = AIo = true;
+	HUb = HUo = RMb = RMo = false;
+}
 void searchInMapinvers(int keyx, int keyy) {
 	auto it = labelIndexMap7inverse.find(std::make_pair(keyx, keyy));
 	if (it != labelIndexMap7inverse.end()) {

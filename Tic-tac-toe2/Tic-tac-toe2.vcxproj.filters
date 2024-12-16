@@ -39,6 +39,15 @@
     <ClInclude Include="4x4X_O2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="numX_O.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinMaxPlayer1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinMaxPlayer6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyForm.cpp">

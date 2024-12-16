@@ -21,6 +21,14 @@ public:
     bool is_draw();
     bool game_is_over();
     std::string display_the_availableGame(int currentX, int currentY);
+    void reset_board() {
+        for (int i = 0; i < this->rows; i++) {
+            for (int j = 0; j < this->columns; j++) {
+                this->board[i][j] = '0';
+            }
+        }
+        this->n_moves = 0;
+    }
 
 };
 

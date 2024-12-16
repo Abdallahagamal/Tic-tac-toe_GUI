@@ -12,6 +12,18 @@ public:
     bool is_win();
     bool is_draw();
     bool game_is_over();
+    void reset_board() {
+        for (int i = 0; i < this->rows; i++) {
+            for (int j = 0; j < this->columns; j++) {
+                this->board[i][j] = '0';
+            }
+        }
+        this->n_moves = 0;
+    }
+    Board<T>* get_board() {
+        return this;
+    }
+
 };
 
 
@@ -54,9 +66,13 @@ X_O_Board6<T>::X_O_Board6() {
 
 template <typename T>
 bool X_O_Board6<T>::update_board(int x, int y, T mark) {
-    if (this->board[x][y] == '0') {
+    if (this->board[x][y] == '0'||mark=='0') {
         this->board[x][y] = toupper(mark);
-        this->n_moves++;
+        if (mark == '0') {
+            this->n_moves--;
+        }
+        else
+            this->n_moves++;
         return true;
     }
     return false;
@@ -106,7 +122,11 @@ bool X_O_Board6<T>::is_win() {
 // Return true if 9 moves are done and no winner
 template <typename T>
 bool X_O_Board6<T>::is_draw() {
-    return (this->n_moves == 9 && !is_win());
+    if(this->n_moves == 9 && !is_win())
+	{
+		return true;
+	}
+	return false;
 }
 
 template <typename T>
